@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(27, 139, 143);
+}
+
+.test {
+  display: block;
+  margin: auto;
+  max-width: 70rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: PT Sans Narrow;
+  font-size: 1.4em;
+}
+
+p {
+  font-family: Open Sans;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(94, 61, 42);
+  font-size: 1.6em;
+  margin: 0px;
+  padding: 0px;
+}
+.principal {
+  border-radius: 10px;
+}
+h2 {
+  background-color: rgb(94, 61, 42);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.container {
+  display: flex;
+}
+header {
+  flex-direction: column;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+nav > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: éàpx;
+  padding: 10px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #a79189;
+  transition-duration: 6s;
+}
+
+.principal {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.container:nth-child(2) {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  background-color: rgb(68, 128, 136);
+  max-width: 70%;
+  margin: 5px 20px;
+  color: white;
+  text-align: justify;
+  margin-bottom: 200px;
+  padding: 10px;
+}
+
+aside {
+  background-color: white;
+  max-width: 20%;
+  padding: 30px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  img,
+  table,
+  td,
+  blockquote,
+  code,
+  pre,
+  textarea,
+  input,
+  iframe,
+  object,
+  embed,
+  video {
+    max-width: 100%;
+  }
+
+  /* conserver le ratio des images */
+
+  img {
+    height: auto;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .test {
+    margin: 0;
+  }
+  .container:nth-child(2) {
+    flex-direction: column;
+  }
+  section {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  aside {
+    display: none;
+  }
+  a {
+    font-size: 1rem;
+  }
+  nav > a {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  img,
+  table,
+  td,
+  blockquote,
+  code,
+  pre,
+  textarea,
+  input,
+  iframe,
+  object,
+  embed,
+  video {
+    max-width: 100%;
+  }
+  .container:nth-child(2) {
+    flex-direction: column;
+  }
+  section,
+  aside {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  nav > a {
+    margin: 10px;
+    padding: 10px;
+  }
+}
